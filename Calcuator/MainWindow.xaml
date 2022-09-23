@@ -1,0 +1,108 @@
+﻿<Window x:Class="Calcuator.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Calcuator"
+        mc:Ignorable="d"
+        Title="Calculator" Height="450" Width="800"
+        ResizeMode="NoResize">
+        
+    <Grid Background="Gray">
+
+        <TextBox Name="MyTextBox" FontSize="40" Background="Black" BorderThickness="2" Width="700" Height="100" Margin="60,46,44,288"
+                  HorizontalAlignment="Center" Foreground="White" TextWrapping="Wrap" Text=" " IsReadOnly="True" TextAlignment="Right"
+                 ></TextBox>
+        <Button Name="Button1" FontSize="20" FontWeight="ExtraBold" Height="51" Width="94" HorizontalAlignment="Left" VerticalAlignment="Top"
+                Margin="55,153,0,0" Background="Black" Foreground="White" BorderThickness="2,2,2,1" IsEnabled="False" Click="Button01">
+            1
+        </Button>
+
+        <Button Name="Button2" FontSize="18" FontWeight="ExtraBold" Height="51" Width="94" HorizontalAlignment="Left" VerticalAlignment="Top"
+                Margin="200,153,0,0" Background="Black" Foreground="White" BorderThickness="2,2,2,1" IsEnabled="False" Click="Button02" >
+            2
+        </Button>
+
+        <Button Name="Button3" FontSize="18" FontWeight="ExtraBold" Height="51" Width="94" HorizontalAlignment="Left" VerticalAlignment="Top"
+                Margin="342,153,0,0" Background="Black" Foreground="White" BorderThickness="2,2,2,1" IsEnabled="False" Click="Button03" >
+            3
+        </Button>
+
+        <Button Name="Button4" FontSize="18" FontWeight="ExtraBold" Height="51" Width="94" HorizontalAlignment="Left" VerticalAlignment="Top"
+                Margin="55,217,0,0" Background="Black" Foreground="White" BorderThickness="2,2,2,1" IsEnabled="False" Click="Button04" >
+            4
+        </Button>
+
+        <Button Name="Button5" FontSize="18" FontWeight="ExtraBold" Height="51" Width="94" HorizontalAlignment="Left" VerticalAlignment="Top"
+                Margin="200,217,0,0" Background="Black" Foreground="White" BorderThickness="2,2,2,1" IsEnabled="False" Click="Button05">
+            5
+        </Button>
+
+        <Button Name="Button6" FontSize="18" FontWeight="ExtraBold" Height="51" Width="94" HorizontalAlignment="Left" VerticalAlignment="Top"
+                Margin="342,217,0,0" Background="Black" Foreground="White" BorderThickness="2,2,2,1" IsEnabled="False" Click="Button06" >
+            6
+        </Button>
+        <Button Name="Button7" FontSize="18" FontWeight="ExtraBold" Height="50" Width="94" HorizontalAlignment="Left" VerticalAlignment="Top"
+                Margin="55,287,0,0" Background="Black" Foreground="White" BorderThickness="2,2,2,1" IsEnabled="False" Click="Button07" >
+            7
+        </Button>
+
+        <Button Name="Button8" FontSize="18" FontWeight="ExtraBold" Height="51" Width="94" HorizontalAlignment="Left" VerticalAlignment="Top"
+                Margin="200,287,0,0" Background="Black" Foreground="White" BorderThickness="2,2,2,1" IsEnabled="False" Click="Button08" >
+            8
+        </Button>
+
+        <Button Name="Button9" FontSize="18" FontWeight="ExtraBold" Height="51" Width="94" HorizontalAlignment="Left" VerticalAlignment="Top"
+                Margin="342,287,0,0" Background="Black" Foreground="White" BorderThickness="2,2,2,1" IsEnabled="False" Click="Button09">
+            9
+        </Button>
+
+        <Button Name="Button0" FontSize="18" FontWeight="ExtraBold" Height="51" Width="94" HorizontalAlignment="Left" VerticalAlignment="Top"
+                Margin="55,355,0,0" Background="Black" Foreground="White" BorderThickness="2,2,2,1" IsEnabled="False" Click="Button00" >
+            0
+        </Button>
+
+        <Button Name="ButtonEquals" FontSize="36" FontWeight="ExtraBold" Height="50" Width="408" HorizontalAlignment="Left" VerticalAlignment="Top"
+                Margin="174,355,0,0" Background="Black" Foreground="White" BorderThickness="2,2,2,1" IsEnabled="False" Click="ButtonEquals_Click" >
+            =
+        </Button>
+
+        <Button Name="ButtonPoint" FontSize="20" FontWeight="ExtraBold" Height="51" Width="94" HorizontalAlignment="Left" VerticalAlignment="Top"
+                Margin="493,287,0,0" Background="Black" Foreground="White" BorderThickness="2,2,2,1" IsEnabled="False" Click="ButtonPoint_Click" >
+            .
+        </Button>
+
+        <Button Name="ButtonMul" FontSize="20" FontWeight="ExtraBold" Height="51" Width="94" HorizontalAlignment="Left" VerticalAlignment="Top"
+                Margin="493,217,0,0" Background="Black" Foreground="White" BorderThickness="2,2,2,1" IsEnabled="False" Click="ButtonMul_Click" >
+            *
+        </Button>
+
+        <Button Name="ButtonDiv" FontSize="20" FontWeight="ExtraBold" Height="51" Width="94" HorizontalAlignment="Left" VerticalAlignment="Top"
+                Margin="493,153,0,0" Background="Black" Foreground="White" BorderThickness="2,2,2,1" IsEnabled="False" Click="ButtonDiv_Click" >
+            /
+        </Button>
+
+        <Button Name="Button_Clear" FontSize="20" FontWeight="ExtraBold" Height="51" Width="94" HorizontalAlignment="Left" VerticalAlignment="Top"
+                Margin="650,153,0,0" Background="Black" Foreground="White" BorderThickness="2,2,2,1" IsEnabled="False" Click="ButtonClear" >
+            C
+        </Button>
+
+        <Button Name="ButtonAdd" FontSize="20" FontWeight="ExtraBold" Height="51" Width="94" HorizontalAlignment="Left" VerticalAlignment="Top"
+                Margin="650,217,0,0" Background="Black" Foreground="White" BorderThickness="2,2,2,1" IsEnabled="False" Click="ButtonAdd_Click" >
+            +
+        </Button>
+
+        <Button Name="ButtonSub" FontSize="20" FontWeight="ExtraBold" Height="51" Width="94" HorizontalAlignment="Left" VerticalAlignment="Top"
+                Margin="650,286,0,0" Background="Black" Foreground="White" BorderThickness="2,2,2,1" IsEnabled="False"  Click="ButtonSub_Click">
+            -
+        </Button>
+
+        <Button Name="ButtonOn" FontSize="20" FontWeight="ExtraBold" Height="51" Width="94" HorizontalAlignment="Left" VerticalAlignment="Top"
+                Margin="650,355,0,0" Background="Black" Foreground="White" BorderThickness="2,2,2,1" Click="ButtonOn_Click"  >
+            ON
+
+           
+        </Button>
+
+    </Grid>
+</Window>
